@@ -1102,3 +1102,80 @@ img{
 
 
 }
+
+@media  (max-width: 450px){
+    
+       .navbar #icon{
+        display: block;
+        position: absolute;
+        right: 28px;
+        top: 19px;
+        width: 25px;
+        height: 25px;    
+    }
+    
+        .title{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .title h5{
+        font-size: 20px;
+    }
+
+    .title h1{
+        font-size: 25px;
+    }
+
+    .title h3{
+        font-size: 20px;
+    }
+    
+    
+       .about_left img{
+        width: 350px;
+        height: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    
+    .demo_title{
+    text-align: center;
+    font-size: 25px;
+ }
+
+ .demo_title::before{
+     content: " ";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 200px;
+     height: 3px;
+     background-color: black;
+     transform: translate(-50%);
+ }
+
+ .demo_title::after{
+    content: "which I have done ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 16px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background-color:darksalmon;
+    transform: translate(-50%);
+}
+
+
+    
+
+    
+}
+
+
+
+
