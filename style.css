@@ -1,0 +1,1104 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* =========  navbar css styling ========= */
+
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: cornflowerblue;
+    z-index: 99999;
+    position: fixed;
+    transition: all 0.3s;
+}
+
+label.logo{
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0 100px;
+    color: white;
+    line-height: 70px;
+}
+
+.logo span.sp1{
+    color: crimson;
+    font-style: italic;
+}
+
+.navbar .list{
+    float: right;
+    margin-right: 40px;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 70px;
+    text-transform: capitalize;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 10px;
+    transition: 0.5s ease;
+}
+
+.navbar a:hover{
+    color: black;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+
+/* ========== homepage css styling ========= */
+
+.banner{
+    background-image: url("image/20220120_121440-01-removebg-preview (2).png");
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    background-position: center;
+    
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.title h5{
+    color: cornflowerblue;
+    font-size: 30px;
+}
+
+.title h1{
+    color: coral;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.title h3{
+    color:cornflowerblue;
+    font-size: 25px;
+    text-transform: capitalize;
+
+}
+
+.title span{
+    color: crimson;
+    font-style: italic;
+}
+
+.title a{
+    width: 120px;
+    height: auto;
+    outline: none;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    display: block;
+    margin-top: 20px;
+    transition: all 0.7s;
+}
+
+.navbar #icon{
+    display: none;
+}
+
+ /* ======== about section css styling ===========  */
+
+ .my_about{
+
+    background-image: url("image/images (21).jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
+
+
+.container_content{
+    padding: 50px 20px;
+}
+
+ .about_title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    position: relative;
+ }
+
+ .about_title::before{
+     content: " ";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 200px;
+     height: 3px;
+     background-color:none;
+     transform: translate(-50%);
+ }
+
+ .about_title::after{
+    content: "who i am ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background-color:transparent;
+    transform: translate(-50%);
+}
+
+.container_content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.about_left img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about_left{
+    width: 40%;
+}
+
+.about_right{
+    width: 50%;
+}
+
+.about_right h2{
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.about_right p{
+    font-size: 20px;
+    line-height: 25px;
+    color: coral;
+    margin-bottom: 20px;
+}
+
+.about_right span{
+    color: crimson;
+    font-style: italic;
+}
+
+.about_right a{
+        width: 150px;
+        height: auto;
+        outline: none;
+        padding: 8px 16px;
+        text-transform: capitalize;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: crimson;
+        color: white;
+        margin-top: 20px;
+        
+}
+
+/* =============== service section css styling ============ */
+
+
+.my_service{
+    background-color: darkgray;
+}
+
+.service_title{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    position: relative;
+ }
+
+ .service_title::before{
+     content: " ";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 200px;
+     height: 3px;
+     background-color: black;
+     transform: translate(-50%);
+ }
+
+ .service_title::after{
+    content: "what i provide ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background-color:darkgray;
+    transform: translate(-50%);
+}
+
+.service_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service_container .card{
+    width: 400px;
+    height: auto;
+    padding: 20px 20px;
+    background-color: coral;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.service_container .card h3{
+    color: white;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.service_container .card p{
+    color: white;
+}
+
+
+
+.service_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service_container{
+    padding: 30px 20px;
+}
+
+/* ============ skills section css styling ========== */
+
+
+
+.skill_title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    position: relative;
+ }
+
+ .skill_title::before{
+     content: " ";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 200px;
+     height: 3px;
+     background-color: black;
+     transform: translate(-50%);
+ }
+
+ .skill_title::after{
+    content: "what i know ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background-color:white;
+    transform: translate(-50%);
+}
+
+.skill_container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.skill_headtitle{
+    width: 40%;
+    padding-bottom: 15px;
+}
+
+.skill_content{
+    width: 40%;
+}
+
+
+.skill_headtitle h2{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.skill_headtitle p{
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.skill_headtitle a{
+    width: 150px;
+    height: auto;
+    outline: none;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    
+}
+
+.skill_content .info{
+    font-size: 20px;
+}
+
+.skill_content .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_content .line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+/* ============== demo section css styling =================== */
+
+.myDemo{
+
+    background-color: darksalmon;
+}
+
+.demo-container{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.demo_title{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    position: relative;
+ }
+
+ .demo_title::before{
+     content: " ";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 200px;
+     height: 3px;
+     background-color: black;
+     transform: translate(-50%);
+ }
+
+ .demo_title::after{
+    content: "which I have done ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background-color:darksalmon;
+    transform: translate(-50%);
+}
+
+
+a img{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.lightbox{
+    visibility: hidden;
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: black;
+}
+
+.lightbox:target{
+    visibility: visible;
+}
+
+.lightbox-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.close{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: 300;
+    text-decoration: none;
+    color: red;
+}
+
+img{
+    width: 900px;
+    height: 600px;
+    
+}
+
+
+/* =============== team section css styling ========== */
+
+.team_section{
+    background-color: darkgray;
+}
+
+.team_title{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    position: relative;
+ }
+
+ .team_title::before{
+     content: " ";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 200px;
+     height: 3px;
+     background-color: black;
+     transform: translate(-50%);
+ }
+
+ .team_title::after{
+    content: "who with me ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background-color:darkgray;
+    transform: translate(-50%);
+}
+
+.card_container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_container .box{
+    width: 300px;
+    height: 400px;
+    background-color: cadetblue;
+    border-radius: 10px;
+
+}
+
+.box img{
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.box h3{
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: crimson;
+}
+
+.box p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* =========== footer section css styling ===========  */
+
+.footer{
+
+    background-color: yellowgreen;
+}
+
+.footer_title{
+
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    position: relative;
+ }
+
+ .footer_title::before{
+     content: " ";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 200px;
+     height: 3px;
+     background-color: black;
+     transform: translate(-50%);
+ }
+
+ .footer_title::after{
+    content: "get in touch ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background-color:white;
+    transform: translate(-50%);
+}
+
+
+.footer_content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_content h2{
+
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.footer_content li{
+    line-height: 2rem;
+    color: sienna;
+    padding-left: 10px;
+}
+
+.footer_content .footer_list{
+    flex-basis: 20%;
+}
+
+.footer_content .footer_list1{
+    flex-basis: 40%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.footer_list1 h2{
+    padding-left: 0px;
+}
+
+.footer_content .footer_list1 span{
+    font-size: 18px;
+    
+}
+.footer_content .footer_list1 input{
+    width: 50%;
+    height: 30px;
+    display: block;
+}
+
+.footer_list1 a{
+    width: 150px;
+    height: auto;
+    outline: none;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+}
+
+.footer .copy{
+    text-align: center;
+    padding: 16px 0px;
+    background-color: cadetblue;
+}
+
+
+
+/* ============ Desktop responsive =========== */
+
+@media (max-width:1700px){
+       
+    .service_container .card{
+        margin: 5px;
+        width: 350px;
+        height: 300px;
+
+        }
+        .service_container{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+        
+        }
+
+        .service_container .card h3{
+            color: white;
+            text-transform: capitalize;
+            font-size: 25px;
+            padding: 5px;
+        }
+        
+        .service_container .card p{
+            color: white;
+            font-size: 20px;
+        }
+
+        .box h3{
+            text-align: center;
+            font-size: 22px;
+            text-transform: capitalize;
+            color: crimson;
+        }
+        
+        .box p{
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .card_container .box{
+            width: 320px;
+            height: 400px;
+            margin: 5px;
+            background-color: cadetblue;
+            border-radius: 10px;
+        
+        }
+        
+        
+}
+
+
+
+
+
+/* ============ laptop responsive =============== */
+
+@media  (max-width: 1400px){
+
+    label.logo{
+        font-size: 35px;
+        padding: 0 22px;
+        
+    }
+
+    .navbar li {
+        font-size: 24px;        
+    }
+    
+    .about_left{
+        width: 50%;
+    }
+    
+    .about_right{
+        width: 50%;
+    }
+
+    
+    .about_left img{
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .service_container .card{
+        margin: 5px;
+        width: 350px;
+        height: 300px;
+
+        }
+        .service_container{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+        
+        }
+
+        .service_container .card h3{
+            color: white;
+            text-transform: capitalize;
+            font-size: 20px;
+            padding: 5px;
+        }
+        
+        .service_container .card p{
+            color: white;
+            font-size: 15px;
+        }
+        
+        
+        .skill_headtitle{
+            width: 50%;
+            padding-bottom: 15px;
+        }
+        
+        .skill_content{
+            width: 40%;
+        }
+
+        .demo-container{
+            display: flex;
+            
+        }
+        
+        
+        a img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .close{
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            font-size: 30px;
+
+        }
+
+        img{
+            width: 600px;
+            height: 400px;
+            border-radius: 10px;
+            
+        }
+
+
+        .card_container .box{
+            width: 350px;
+            height: 350px;
+            margin: 10px;
+        }
+
+        .box h3{
+            font-size: 15px;
+        }
+        
+        .box p{
+            font-size: 14px;    
+        }
+        
+
+        .card_container{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+        }
+        
+
+}
+    
+
+/* ========== mobile responsive ========== */
+
+
+@media (max-width:880px) {
+
+
+    /* ========= navbar css style ========= */
+
+    label.logo{
+        font-size: 30px;
+        padding: 0 50px;
+        text-transform: capitalize;
+    }
+    
+     .logo span.sp1{
+        font-size: 30px;
+     }
+
+    .navbar .list{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: crimson;
+        transition: all 0.5s;
+    }
+
+    .navbar .list.show{
+        left: 0%;
+    }
+
+    .navbar li {
+        display: block;
+        text-align: center;
+        font-size: 30px;        
+    }
+
+    .navbar a:hover{
+        color: darkcyan;
+        background: none;
+        border: none;
+    }
+
+   .navbar #icon{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 19px;
+        width: 25px;
+        height: 25px;    
+    }
+
+
+
+    /* ============= homepage css styling ============== */
+
+
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .title h5{
+        font-size: 25px;
+    }
+
+    .title h1{
+        font-size: 35px;
+    }
+
+    .title h3{
+        font-size: 23px;
+    }
+
+    /* ======== about section css styling ============ */
+
+    .about_title{
+        font-size: 25px;
+     }
+
+     .container_content{
+        padding: 15px 5px;
+    }
+
+    .about_left img{
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .about_left{
+        width: 100%;
+    }
+    
+    .about_right{
+        width: 100%;
+    }
+    
+    .about_right h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .about_right a{
+        width: 150px;
+        font-size: 15px;        
+ }
+
+/* ========== service section css styling ========== */
+
+.service_title{
+    text-align: center;
+    font-size: 25px;
+ }
+
+.service_container{
+    display: flex;
+    flex-direction: column;
+
+} 
+
+.service_container .card{
+ margin-top: 15px;
+ width: 320px;
+ height: 250px;
+ }
+ 
+
+/* ============== skill section css styling ============ */
+
+.skill_title{
+    font-size: 25px;
+}
+
+.skill_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill_headtitle{
+    width: 100%;
+    padding: 10px;
+}
+
+.skill_headtitle h2{
+    font-size: 25px;
+}
+
+.skill_headtitle p{
+    font-size: 15px;
+}
+
+.skill_content{
+    width: 100%;
+    padding: 100px 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/* ============== mydemo section css styling ================= */
+
+.demo_title{
+    font-size: 25px;
+
+ }
+
+ 
+ .demo-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+ a img{
+    width: 320px;
+    height: 250px;
+}
+
+.close{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    font-size: 30px;
+
+}
+
+img{
+    width: 320px;
+    height: 250px;
+    border-radius: 10px;
+    
+}
+
+/* ================= team section css styling ================= */
+
+.team_title{
+    font-size: 25px;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.box img{
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.card_container .box{
+    width: 300px;
+    height: 400px;
+    margin-top: 15px;
+}
+
+.box h3{
+    font-size: 20px;
+}
+
+.box p{
+    font-size: 16px;    
+}
+
+/* ========== footer section css styling ============== */
+
+.footer_title{
+    font-size: 25px;
+}
+
+.footer_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer_content .footer_list{
+    width: 100%;
+}
+
+.footer_list1{
+    width: 100%;
+}
+
+
+}
