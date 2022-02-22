@@ -1133,6 +1133,11 @@ img{
         font-size: 20px;
     }
     
+    .title a{
+    padding: 7px 14px;
+    font-size: 15px;
+}
+
     
        .about_left img{
         width: 350px;
